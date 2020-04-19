@@ -1,0 +1,43 @@
+buildscript {
+    dependencies {
+        classpath group: 'de.dynamicfiles.projects.gradle.plugins', name: 'javafx-gradle-plugin', version: '8.8.2'
+    }
+    
+    repositories {
+        mavenLocal()
+        mavenCentral()
+    }
+}
+
+plugins {
+    id 'java'
+}
+apply plugin: 'javafx-gradle-plugin'
+jfx {
+    // minimal requirement for jfxJar-task
+    mainClass = 'fr.antoineok.mcpjsongen.Main'
+    
+    // minimal requirement for jfxNative-task
+    vendor = 'antoineok'
+}
+repositories{
+	mavenCentral()
+	jcenter()
+}
+
+dependencies {
+	compile group: 'com.google.code.gson', name: 'gson', version: '2.8.6'
+}
+
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'fr.antoineok.mcpjsongen.Main'
+    }
+    exclude('about.html', 'jetty-dir.css', 'module-info.class')
+    from {
+    	configurations.compile.collect {
+    		it.isDirectory() ? it : zipTree(it)
+    	}
+    }
+}
