@@ -70,7 +70,52 @@
                         <Insets left="15.0" right="15.0" />
                      </GridPane.margin>
                   </Button>
-                   <Button mnemonicParsing="false" onAction="#handleMenuButtonAction" styleClass="danger" text="Menu" GridPane.halignment="LEFT" GridPane.valignment="TOP">
+                  <Button disable="true" mnemonicParsing="false" prefHeight="20.0" prefWidth="135.0" styleClass="success" text="i" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets left="15.0" right="15.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <Button disable="true" mnemonicParsing="false" prefHeight="20.0" prefWidth="135.0" styleClass="success" text="Button" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                     <GridPane.margin>
+                        <Insets left="15.0" right="15.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <Button disable="true" mnemonicParsing="false" prefHeight="20.0" prefWidth="135.0" styleClass="success" text="Trap Door" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                     <GridPane.margin>
+                        <Insets left="15.0" right="15.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <Button disable="true" mnemonicParsing="false" prefHeight="20.0" prefWidth="135.0" styleClass="success" text="Ladder" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                     <GridPane.margin>
+                        <Insets left="15.0" right="15.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <Button disable="true" mnemonicParsing="false" prefHeight="20.0" prefWidth="135.0" styleClass="success" text="Torch" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                     <GridPane.margin>
+                        <Insets left="15.0" right="15.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <Button disable="true" mnemonicParsing="false" prefHeight="20.0" prefWidth="135.0" styleClass="success" text="Door" GridPane.columnIndex="1" GridPane.rowIndex="4">
+                     <GridPane.margin>
+                        <Insets left="15.0" right="15.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <Button disable="true" mnemonicParsing="false" prefHeight="20.0" prefWidth="135.0" styleClass="success" text="Lever" GridPane.columnIndex="2" GridPane.rowIndex="4">
+                     <GridPane.margin>
+                        <Insets left="15.0" right="15.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <Button disable="true" mnemonicParsing="false" prefHeight="20.0" prefWidth="135.0" styleClass="success" text="Stair" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                     <GridPane.margin>
+                        <Insets left="15.0" right="15.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <Button disable="true" mnemonicParsing="false" prefHeight="20.0" prefWidth="135.0" styleClass="success" text="Panes" GridPane.columnIndex="2" GridPane.rowIndex="5">
+                     <GridPane.margin>
+                        <Insets left="15.0" right="15.0" />
+                     </GridPane.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#handleMenuButtonAction" styleClass="danger" text="Menu" GridPane.halignment="LEFT" GridPane.valignment="TOP">
                        <GridPane.margin>
                            <Insets left="15.0" top="15.0" />
                        </GridPane.margin>
