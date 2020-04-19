@@ -15,7 +15,7 @@ public class Reference
     public static String gameVersion = "1.9.4+";
     public static String iconURL = "http://miningmark48.xyz/img/projects/mcjsongen/icon.png";
     public static String styleSheetResource = Main.INSTANCE.getClass().getResource("/bootstrap2.css").toString();
-    public static String signature = "généré avec le générateur de json d'antoineok";
+    public static String signature = "genere avec le generateur de json d'antoineok";
 
     public static Alert aboutAlert = new Alert(Alert.AlertType.INFORMATION);
     public static Alert generatedAlert = new Alert(Alert.AlertType.INFORMATION);
