@@ -10,6 +10,7 @@ import javafx.stage.Stage;
 
 public class Reference
 {
+    public static String author = "antoineok";
     public static String version = "1.0.0";
     public static String gameVersion = "1.9.4+";
     public static String iconURL = "http://miningmark48.xyz/img/projects/mcjsongen/icon.png";
@@ -23,7 +24,7 @@ public class Reference
     public static void init() {
         aboutAlert.setTitle("About");
         aboutAlert.setHeaderText("About Minecraft JSON Generator");
-        aboutAlert.setContentText("Minecraft JSON Generator v" + Reference.version);
+        aboutAlert.setContentText("Minecraft JSON Generator v" + Reference.version + " par " + author);
         Stage aboutStage = (Stage) aboutAlert.getDialogPane().getScene().getWindow();
         aboutStage.getIcons().add(new Image(Reference.iconURL));
 
