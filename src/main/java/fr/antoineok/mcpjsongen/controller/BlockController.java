@@ -6,6 +6,7 @@ import fr.antoineok.mcpjsongen.ref.Reference;
 import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.CheckBox;
 import javafx.scene.control.MenuBar;
 import javafx.scene.control.TextField;
 import javafx.stage.DirectoryChooser;
@@ -20,6 +21,7 @@ public class BlockController
     @FXML private TextField fieldBlockName;
     @FXML private TextField fieldTextureName;
     @FXML private TextField fieldExportPath;
+    @FXML private CheckBox checkBox18;
 
     @FXML private void handleCloseButtonAction(ActionEvent event){
         Platform.exit();
@@ -42,7 +44,7 @@ public class BlockController
     }
 
     @FXML private void handleGenerateButtonAction(ActionEvent event) {
-        GenBlock.genBlock(fieldBlockName.getText(), fieldTextureName.getText(), fieldExportPath.getText());
+        GenBlock.genBlock(fieldBlockName.getText(), fieldTextureName.getText(), fieldExportPath.getText(), checkBox18.isSelected());
 
         fieldBlockName.clear();
         fieldTextureName.clear();

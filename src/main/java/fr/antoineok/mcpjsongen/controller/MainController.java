@@ -29,4 +29,8 @@ public class MainController
     @FXML private void handleItemButtonAction(ActionEvent event) throws IOException {
         Reference.setRoot(FXMLFiles.FXML_ITEMS);
     }
+    
+    @FXML private void handleRecipeButtonAction(ActionEvent event) throws IOException {
+        Reference.setRoot(FXMLFiles.FXML_RECIPES);
+    }
 }

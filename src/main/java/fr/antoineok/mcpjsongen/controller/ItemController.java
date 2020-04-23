@@ -23,6 +23,7 @@ public class ItemController
     @FXML private TextField fieldTextureName;
     @FXML private TextField fieldExportPath;
     @FXML private CheckBox checkBoxTool;
+    @FXML private CheckBox checkBox18;
     
     @FXML private void handleCloseButtonAction(ActionEvent event){
         Platform.exit();
@@ -46,10 +47,10 @@ public class ItemController
 
     @FXML private void handleGenerateButtonAction(ActionEvent event) {
         if (checkBoxTool.isSelected()) {
-            GenItem.genTool(fieldBlockName.getText(), fieldTextureName.getText(), fieldExportPath.getText());
+            GenItem.genTool(fieldBlockName.getText(), fieldTextureName.getText(), fieldExportPath.getText(), checkBox18.isSelected());
             checkBoxTool.setSelected(false);
         } else {
-            GenItem.genItem(fieldBlockName.getText(), fieldTextureName.getText(), fieldExportPath.getText());
+            GenItem.genItem(fieldBlockName.getText(), fieldTextureName.getText(), fieldExportPath.getText(), checkBox18.isSelected());
         }
 
         fieldBlockName.clear();

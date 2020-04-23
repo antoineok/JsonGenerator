@@ -62,6 +62,17 @@
                         <Tooltip text="Generate an item model" />
                      </tooltip>
                   </Button>
+                  <Button mnemonicParsing="false" onAction="#handleRecipeButtonAction" prefHeight="50.0" prefWidth="125.0" styleClass="info" text="Recipes" GridPane.columnIndex="3" GridPane.halignment="CENTER" GridPane.rowIndex="1">
+                     <opaqueInsets>
+                        <Insets />
+                     </opaqueInsets>
+                     <tooltip>
+                        <Tooltip text="Generate a mcmod.info file" />
+                     </tooltip>
+                     <GridPane.margin>
+                        <Insets left="15.0" right="15.0" />
+                     </GridPane.margin>
+                  </Button>
                   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Minecraft JSON Generator" textAlignment="CENTER" wrappingWidth="469.767578125" GridPane.columnIndex="2" GridPane.halignment="CENTER">
                      <font>
                         <Font name="Segoe UI" size="34.0" />

@@ -123,6 +123,11 @@
                         <Insets left="15.0" right="15.0" />
                      </GridPane.margin>
                   </VBox>
+                  <CheckBox fx:id="checkBox18" mnemonicParsing="false" text="Is 1.8?" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="3">
+                     <GridPane.margin>
+                        <Insets right="15.0" />
+                     </GridPane.margin>
+                  </CheckBox>
                   <Button mnemonicParsing="false" onAction="#handleMenuButtonAction" styleClass="danger" text="Menu" GridPane.halignment="LEFT" GridPane.valignment="TOP">
                      <GridPane.margin>
                         <Insets left="15.0" top="15.0" />
